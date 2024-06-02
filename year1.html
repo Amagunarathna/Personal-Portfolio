@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,6 +28,222 @@
             text-align: center;
             font-size: 1.5em;
             margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="table-container">
+        <div class="table-title">Semester I</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Subject</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IS1101</td>
+                    <td>Fundamentals of Information Systems</td>
+                    <td>B</td>
+                </tr>
+               <tr>
+                    <td>IS1102</td>
+                    <td>Structured Programming Techniques</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>IS1103</td>
+                    <td>Structured Programming Practicum</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>IS1104</td>
+                    <td>Theories of Information Systems</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>IS1105</td>
+                    <td>Computer System Organization</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>IS1106</td>
+                    <td>Foundations of Web Technologies</td>
+                    <td>A-</td>
+                </tr>
+                <tr>
+                    <td>IS1107</td>
+                    <td>Personal Productivity with Information Technology</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>IS1108</td>
+                    <td>Fundamentals of Mathematics</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>IS1109</td>
+                    <td>Statistics & Probability Theory</td>
+                    <td>B-</td>
+                </tr>
+                <tr>
+                    <td>IS1110</td>
+                    <td>Communication Skills I</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>IS1111</td>
+                    <td>Academic Integrity</td>
+                    <td>B-</td>
+                </tr>
+                <tr>
+                    <td>IS-EGP-1101</td>
+                    <td>General English I</td>
+                    <td>B-</td>
+                </tr>
+                <tr>
+                    <td colspan="2">GPA</td>
+                    <td></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-container">
+        <div class="table-title">Semester II</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Subject</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IS2101</td>
+                    <td>Object Oriented Programming</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>IS2102</td>
+                    <td>Object Oriented Programming Practicum</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>IS2103</td>
+                    <td>Emerging IS Technologies</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>IS2104</td>
+                    <td>Database Systems</td>
+                    <td>A-</td>
+                </tr>
+                <tr>
+                    <td>IS2105</td>
+                    <td>Database Management Systems Practicum</td>
+                    <td>B-</td>
+                </tr>
+                <tr>
+                    <td>IS2106</td>
+                    <td>System Analysis & Design</td>
+                    <td>A-</td>
+                </tr>
+                <tr>
+                    <td>IS2107</td>
+                    <td>Social & Professional Issues</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>IS2108</td>
+                    <td>Human Computer Interaction</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>IS2109</td>
+                    <td>Information Assurance & Security</td>
+                    <td>A-</td>
+                </tr>
+                <tr>
+                    <td>IS2110</td>
+                    <td>Software Project Initiation & Planning</td>
+                    <td>B-</td>
+                </tr>
+                <tr>
+                    <td>IS2111</td>
+                    <td>Advanced Mathematics</td>
+                    <td>C-</td>
+                </tr>
+                <tr>
+                    <td>IS2112</td>
+                    <td>Communication Skills II</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>IS-EGP-1201</td>
+                    <td>General English II</td>
+                    <td>B-</td>
+                </tr>
+                <tr>
+                    <td colspan="2">GPA</td>
+                    <td></td>
+                    
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 1</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .table-container {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .table-title {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .table-container {
+                width: 100%;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
         }
     </style>
 </head>
