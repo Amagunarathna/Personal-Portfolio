@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/31554a9959.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/LogoWebAma.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Academic</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          
+            <h1>Hi!<br> I'm <span> Amanda Gunarathna</span><br> from Sabaragamuwa University of Sri Lanka.</h1>
+            
+        </div>
+    </div>
+</div>
+<!-- ---------------------about--------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/imageDiplomaAmaR.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am currently a third-year undergraduate student in the Computing and Information department at the Faculty of Computing, Sabaragamuwa University of Sri Lanka. With a keen interest in Data Science, I am passionate about transforming raw data into meaningful insights that drive decision-making and innovation.
+                    As a fast learner with a strong adaptability to the ever-evolving field of Information Technology. My academic journey has equipped me with the necessary skills and knowledge.
+                    I am dedicated to continuous learning and professional development, always seeking out new challenges and opportunities to expand my expertise. My goal is to become a proficient data analyst, leveraging my analytical skills and technical knowledge to contribute to impactful projects and solve complex problems. And also, I earned an Associate Diploma in Information and Communication Technology from Aquinas College of Higher Studies, covering ICT fundamentals, Information Systems, Multimedia, Hardware and Networking, Internet and Email, Web Design, and System Analysis.
+                    </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Soft skills</span><br>
+                            <li>Teamwork</li>
+                            <li>Time Management</li>
+                            <li>Critical Thinking</li>
+                        </li>
+                        <li><span>Technical skills</span><br>
+                            <li>Programming Languages: Python (Learning), C</li>
+                            <li>Database Management: MySQL</li>
+                            <li>Data Analysis: Excel</li>
+                            <li>Version Control: GitHub</li>
+                            <li>Documentation: Microsoft Word</li>
+                        </li>
+                        <li><span>Languages</span><br>
+                          <li>Sinhalese</li>
+                          <li>English</li>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Present</span><br>Reading BSc Hons Computing and Information Systems. </li>
+                        <li><span>2021</span><br>Associate Diploma in Information and Communication Technology. <a href="https://drive.google.com/file/d/1D0RnPdJScvrNzvq8-MFSPn1MwGx1vHVG/view?usp=sharing"><i class="fa-solid fa-link"></i></a></li>
+                        <li><span>2024</span><br>Python for Biginners. <a href="https://drive.google.com/file/d/1uDOaXPAFZ0jwgLDN0YYHTjqAMpvIdp48/view?usp=sharing"><i class="fa-solid fa-link"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Current</span><br>Sabaragamuwa University of Sri Lanka. </li>
+                        <li><span>2021</span><br>Aquinas College of Higher Studies. </li>
+                        <li><span>2019</span><br>St.Paul's Girls' School, Milagiriya, Colombo 05. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------Services------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Acadamic</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Year 1</h2>
+                <p>The first two semesters of the Information Systems program cover essential topics like programming, web technologies, database systems, system analysis, and human-computer interaction. They also include communication skills, mathematics, and information security. This 32 credit curriculum provides a comprehensive foundation, blending technical skills with professional and ethical knowledge.</p>
+                <a href="year1.html">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-newspaper"></i>
+                <h2>Year 2</h2>
+                <p>Semesters three and four of the Information Systems program cover advanced topics like object-oriented analysis, data structures, software engineering, IT governance, web application development, and operating systems. They also include IT auditing, system administration, agile development, and capstone projects. This 33 credit curriculum ensures comprehensive expertise in technical and management aspects.</p>
+                <a href="year2.html">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Year 3</h2>
+                <p>Semesters five and six focus on advanced topics and professional practice in Information Systems. Semester five includes courses on entrepreneurship, enterprise architecture, high-performance computing, business intelligence, and project management, along with electives like advanced databases and data mining. Semester six is dedicated to a six-credit professional practice, totaling 28 credits.</p>
+                <a href="year3.html">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-graduate"></i>
+                <h2>Year 4</h2>
+                <p>Semesters seven and eight of the Information Systems program emphasize advanced research, IT law, business process simulation, and cloud computing. Electives include mobile app development and machine learning. The final semester focuses on a major research project, business/IT alignment, and specialized topics like computer system security and digital business models, totaling 45 credits.</p>
+                <a href="year4.html">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------Portfolio------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Carex vehicle breakdown help mobile app (Mini Project - Group) </h3>
+                    <p>I identified the requirements and comprehensive documentation. And also, I developed a backend using the Node.js framework and established a resilient MongoDB cluster for efficient data management. Additionally, I conducted API testing using Postman to ensure seamless functionality and reliability across the app.</p>
+                    <a href="https://github.com/sudeepa99/Carex_App"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/amaRaGun1.jpg">
+                <div class="layer">
+                    <h3>Pearl tour booking website <br>(MERN Stack) - Group</h3>
+                    <p>My contributions primarily focused on backend development, utilizing the Node.js framework to build robust APIs that power the platform's functionality. Additionally, I meticulously crafted UML diagrams using Draw.io, ensuring clear visualization of the project's architecture and data flow. Thorough API testing was conducted using Postman to validate functionality and ensure seamless user experience.</p>
+                    <a href="https://github.com/Shehan-lakshitha/Pearl"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Future projects</h3>
+                    <p>Embarking on a data science project for future experience as a data analyst is an excellent endeavor. Focusing on tasks like data collection, cleaning, analysis, and visualization will hone essential skills. Leveraging Python libraries like pandas, numpy, and matplotlib will facilitate efficient data manipulation and presentation, fostering growth in analytical skills.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--  -----------------Contact------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>amandagunarathna3021@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>0779489568</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/people/Amanda-Gunarathna/pfbid02pFtE5ECeCPZ9r9VJgEVgxmjS4xPQY3cNmrt1DUxUXj2AkxtWL1wgddjemBVoPGgSl/?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/amanda-gunarathna/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Amagunarathna"><i class="fa-brands fa-github"></i></a>
+                    <!--<a href=""><i class="fa-brands fa-twitter-square"></i></a>-->
+
+                </div>
+                <a href="images/19APC4059_CV_Creating.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 Amanda Gunarathna. All Right Received.</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        
+    }
+</script>
+<!--<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDZX4xzgKVRRueLL8mXG3S8nTCNPiDGnII7SkjThFiEI38TH6CGBQXlybgNRTBIPNh/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>-->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx1y7pgCwlrZMKoKa3QbAIRK7hyqfCep8R6_Wi7OkvVvZSNjimFYWphh3n-k3KHyk0fww/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully." 
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
+<!--contact form01-->
